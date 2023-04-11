@@ -1,0 +1,49 @@
+html, body{
+    height: 100%;
+    width: 100;
+    margin: 0px;
+}
+
+.grid-container{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.grid-container div{
+    border: 1px solid black;
+}
+
+#one{
+    grid-row: 1 / span 3;
+    background-image:url('Taycan.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:blanchedalmond;
+    background-color: rgb(169, 202, 223);
+}
+
+#two{
+    grid-row: 1 / span 3;
+    background-image:url('Taycan-interior.webp');
+    background-position: center;
+    background-size: 410px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: silver;
+}
+
+#three{
+    grid-row: 1 / span 3;
+    background-image:url('taycan-colors.png');
+    background-position: right;
+    background-size: 425px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgb(169, 202, 223);
+}
+
+
